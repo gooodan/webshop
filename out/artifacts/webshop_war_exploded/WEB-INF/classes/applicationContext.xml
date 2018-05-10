@@ -82,6 +82,11 @@
         <property name="productService" ref="productService"/>
     </bean>
 
+    <!-- 购物车的Action -->
+    <bean id="cartAction" class="webshop.cart.action.CartAction" scope="prototype">
+        <property name="productService" ref="productService"/>
+    </bean>
+
     <!-- Service的配置  ===========================-->
     <bean id="userService" class="webshop.user.service.UserService">
         <property name="userDao" ref="userDao"/>

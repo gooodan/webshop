@@ -25,9 +25,9 @@ public class MailUtils {
 
         // 1,获得连接对象
         Properties props = new Properties();
-        props.setProperty("mail.transport.protocol", "smtp");
-        props.setProperty("mail.smtp.host", "smtp.163.com");
-        props.setProperty("mail.smtp.port", "25");
+        props.setProperty("mail.transport.protocol", "smtp");  // 使用的邮件发送协议
+        props.setProperty("mail.smtp.host", "smtp.163.com");    // 发送邮件的服务器地址
+        props.setProperty("mail.smtp.port", "25");  // 端口号
         props.setProperty("mail.smtp.auth", "true"); // 需要验证
         Session session = Session.getInstance(props, new Authenticator() {
             @Override
@@ -46,9 +46,9 @@ public class MailUtils {
             // 设置收件人 抄送CC  密送BCC
             message.setRecipient(RecipientType.TO, new InternetAddress(to));
             // 设置标题 主题如果乱码的话 qq邮箱接收不到
-            message.setSubject(MimeUtility.encodeText("感谢您的注册,本邮件为激活邮件,您不需要回复",MimeUtility.mimeCharset("gb2312"), null));
+            message.setSubject(MimeUtility.encodeText("感谢您的注册,本邮件为激活邮件,您不需要回复", MimeUtility.mimeCharset("gb2312"), null));
             // 设置邮件正文
-            message.setContent("<h1>北大软微商城官方激活邮件!点击下面的连接完成激活操作</h1><h3><a href='http://192.168.0.104:8080/webshop/user_active.action?code="+code+"'>http://192.168.0.104:8080/webshop/user_active.action?code="+code+"</a></h3>", "text/html;charset=UTF-8");
+            message.setContent("<h1>北大软微商城官方激活邮件!点击下面的连接完成激活操作</h1><h3><a href='http://tkx33w.natappfree.cc/webshop/user_active.action?code="+code+"'>http://192.168.0.104:8080/webshop/user_active.action?code="+code+"</a></h3>", "text/html;charset=UTF-8");
             // 3.发送邮件:
             Transport.send(message);
 //            Transport transport = session.getTransport();

@@ -7,26 +7,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ad903b0-5252-4446-ba38-96bfcb22dc1a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/webshop/cart/action/CartAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webshop/cart/vo/Cart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webshop/cart/vo/CartItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/cart.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/webshop_war_exploded/WEB-INF/classes/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webshop_war_exploded/WEB-INF/classes/applicationContext.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/webshop_war_exploded/WEB-INF/classes/struts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webshop_war_exploded/WEB-INF/classes/struts.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/webshop_war_exploded/WEB-INF/classes/webshop/utils/MailUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webshop_war_exploded/WEB-INF/classes/webshop/utils/MailUtils.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/webshop_war_exploded/WEB-INF/jsp/product.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webshop_war_exploded/WEB-INF/jsp/product.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webshop_war_exploded/WEB-INF/jsp/购物车.htm" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/webshop/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webshop/applicationContext.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/webshop/struts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webshop/struts.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/webshop/webshop/utils/MailUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webshop/webshop/utils/MailUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/struts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/struts.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/webshop/utils/MailUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/webshop/utils/MailUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/menu.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/menu.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/product.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/product.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/购物车.htm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -71,7 +59,7 @@
       <file leaf-file-name="web.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="151">
+            <state relative-caret-position="433">
               <caret line="25" column="40" lean-forward="true" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
             </state>
           </provider>
@@ -489,8 +477,16 @@
       <workItem from="1525452226401" duration="25012000" />
       <workItem from="1525592751468" duration="17870000" />
       <workItem from="1525744728095" duration="3047000" />
-      <workItem from="1525781616296" duration="9854000" />
+      <workItem from="1525781616296" duration="10148000" />
     </task>
+    <task id="LOCAL-00001" summary="Module of Cart">
+      <created>1525930336366</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1525930336367</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -505,7 +501,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82515000" />
+    <option name="totallyTimeSpent" value="82809000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -538,11 +534,11 @@
       <window_info id="Image Layers" order="1" />
       <window_info anchor="bottom" id="Java Enterprise" order="8" weight="0.32948717" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="9" sideWeight="0.49963155" visible="true" weight="0.36153847" />
+      <window_info anchor="bottom" id="Run" order="9" sideWeight="0.49963155" weight="0.36153847" />
       <window_info anchor="bottom" id="Version Control" order="5" weight="0.32948717" />
       <window_info anchor="bottom" id="Spring" order="1" weight="0.32948717" />
       <window_info anchor="bottom" id="Terminal" order="2" />
-      <window_info content_ui="combo" id="Project" order="6" visible="true" weight="0.21005917" />
+      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.21005917" />
       <window_info id="Web" order="5" side_tool="true" />
       <window_info id="Learn" order="4" weight="0.3298893" />
       <window_info anchor="right" id="Theme Preview" order="4" />
@@ -560,6 +556,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Module of Cart" />
+    <option name="LAST_COMMIT_MESSAGE" value="Module of Cart" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -907,20 +907,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-176">
-          <caret line="25" column="52" selection-start-line="25" selection-start-column="52" selection-end-line="25" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" column="34" lean-forward="true" selection-start-line="1" selection-start-column="34" selection-end-line="1" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/webshop/cart/vo/CartItem.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
@@ -938,9 +924,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="34" lean-forward="true" selection-start-line="1" selection-start-column="34" selection-end-line="1" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-176">
+          <caret line="25" column="52" selection-start-line="25" selection-start-column="52" selection-end-line="25" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
+        <state relative-caret-position="433">
           <caret line="25" column="40" lean-forward="true" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
         </state>
       </provider>

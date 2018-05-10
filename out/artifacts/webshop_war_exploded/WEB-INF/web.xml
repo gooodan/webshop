@@ -12,10 +12,6 @@
         <param-name>contextConfigLocation</param-name>
         <param-value>classpath:applicationContext.xml</param-value>
     </context-param>
-    <context-param>
-        <param-name/>
-        <param-value/>
-    </context-param>
 
     <!-- 配置Struts2的核心过滤器 -->
     <filter>
@@ -26,6 +22,8 @@
     <filter-mapping>
         <filter-name>struts2</filter-name>
         <url-pattern>/*</url-pattern>
+        <dispatcher>FORWARD</dispatcher>
+        <dispatcher>REQUEST</dispatcher>
     </filter-mapping>
 
     <welcome-file-list>

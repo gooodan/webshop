@@ -5,7 +5,7 @@
   Time: 下午9:47
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="UTF-8"%>
 <%@ taglib uri="/struts-tags" prefix="s" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -57,9 +57,7 @@
                     <a target="_blank"></a>
                 </li>
             </ul>
-            <!-- 					<div class="hotProductAd">
-                        <img src="${pageContext.request.contextPath}/image/a.jpg" width="260" height="343" alt="热门商品" title="热门商品">
-            </div> -->
+
             <ul class="tabContent" style="display: block;">
                 <s:iterator var="p" value="hList">
                     <li>
@@ -395,7 +393,7 @@
         </ul>
     </div>
     <div class="span24">
-        <div class="copyright">Copyright © 2005-2015 网上商城 版权所有</div>
+        <div class="copyright">Copyright © 2018-2020 网上商城 版权所有</div>
     </div>
 </div>
 </body>

@@ -1,6 +1,5 @@
 package webshop.user.service;
 
-import org.junit.Test;
 import org.springframework.transaction.annotation.Transactional;
 import webshop.user.dao.UserDao;
 import webshop.user.vo.User;

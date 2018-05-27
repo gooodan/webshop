@@ -5,7 +5,7 @@
   Time: 下午2:06
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="UTF-8"%>
 <%@taglib uri="/struts-tags" prefix="s" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -107,12 +107,6 @@
                     <a target="_blank" title="限时抢购 (2014-07-30 ~ 2015-01-01)">限时抢购</a>
                 </dd>
             </dl>
-            <dl>
-                <dt></dt>
-                <dd>
-                    <span>    </span>
-                </dd>
-            </dl>
         </div>
         <form id="cartForm" action="${pageContext.request.contextPath}/cart_addCart.action" method="post">
             <<input type="hidden" name="pid" value="<s:property value="model.pid"/>">
@@ -203,7 +197,7 @@
         </ul>
     </div>
     <div class="span24">
-        <div class="copyright">Copyright © 2005-2015 网上商城 版权所有</div>
+        <div class="copyright">Copyright © 2018-2020 网上商城 版权所有</div>
     </div>
 </div>
 </body>

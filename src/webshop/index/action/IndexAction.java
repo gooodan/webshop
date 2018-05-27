@@ -28,7 +28,12 @@ public class IndexAction extends ActionSupport {
     }
 
     /**
+     * 当你的类继承了ActionSupport类并且<action>没有method时
+     *
+     * 它默认调用execute方法，并且execute方法的返回值是success.
+     *
      * 执行访问首页的方法
+     *
      * @return
      */
     public String execute() {

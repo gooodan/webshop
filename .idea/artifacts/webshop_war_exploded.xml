@@ -6,6 +6,10 @@
         <element id="directory" name="classes">
           <element id="module-output" name="webshop" />
         </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="lib1" />
+          <element id="library" level="project" name="lib2" />
+        </element>
       </element>
       <element id="javaee-facet-resources" facet="webshop/web/Web" />
       <element id="javaee-facet-resources" facet="webshop/web/Web2" />

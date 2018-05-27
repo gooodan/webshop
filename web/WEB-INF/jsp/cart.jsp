@@ -5,7 +5,7 @@
   Time: 下午9:17
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="UTF-8"%>
 <%@ taglib uri="/struts-tags" prefix="s" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!-- saved from url=(0043)http://localhost:8080/mango/cart/list.jhtml -->
@@ -93,7 +93,7 @@
             </div>
             <div class="bottom">
                 <a href="${pageContext.request.contextPath}/cart_clearCart.action" id="clear" class="clear">清空购物车</a>
-                <a href="#" id="submit" class="submit">提交订单</a>
+                <a href="${pageContext.request.contextPath}/order_save.action" id="submit" class="submit">提交订单</a>
             </div>
         </div>
     </s:if>
@@ -153,7 +153,7 @@
         </ul>
     </div>
     <div class="span24">
-        <div class="copyright">Copyright © 2005-2015 网上商城 版权所有</div>
+        <div class="copyright">Copyright © 2018-2020 网上商城 版权所有</div>
     </div>
 </div>
 </body>

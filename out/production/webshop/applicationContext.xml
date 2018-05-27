@@ -46,6 +46,8 @@
                 <value>webshop/category/vo/Category.hbm.xml</value>
                 <value>webshop/product/vo/Product.hbm.xml</value>
                 <value>webshop/categorysecond/vo/CategorySecond.hbm.xml</value>
+                <value>webshop/order/vo/Order.hbm.xml</value>
+                <value>webshop/order/vo/OrderItem.hbm.xml</value>
             </list>
         </property>
     </bean>
@@ -87,6 +89,11 @@
         <property name="productService" ref="productService"/>
     </bean>
 
+    <!-- 订单模块的Action-->
+    <bean id="orderAction" class="webshop.order.action.OrderAction" scope="prototype">
+        <property name="orderService" ref="orderService"/>
+    </bean>
+
     <!-- Service的配置  ===========================-->
     <bean id="userService" class="webshop.user.service.UserService">
         <property name="userDao" ref="userDao"/>
@@ -97,18 +104,23 @@
     <bean id="productService" class="webshop.product.service.ProductService">
         <property name="productDao" ref="productDao"/>
     </bean>
+    <bean id="orderService" class="webshop.order.service.OrderService">
+        <property name="orderDao" ref="orderDao"/>
+    </bean>
 
 
     <!-- Dao的配置  ===========================-->
     <bean id="userDao" class="webshop.user.dao.UserDao">
         <property name="sessionFactory" ref="sessionFactory"/>
     </bean>
-
     <bean id="categoryDao" class="webshop.category.dao.CategoryDao">
         <property name="sessionFactory" ref="sessionFactory"/>
     </bean>
-
     <bean id="productDao" class="webshop.product.dao.ProductDao">
         <property name="sessionFactory" ref="sessionFactory"/>
     </bean>
+    <bean id="orderDao" class="webshop.order.dao.OrderDao">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+
 </beans>

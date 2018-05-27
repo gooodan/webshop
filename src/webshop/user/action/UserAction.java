@@ -113,7 +113,7 @@ public class UserAction extends ActionSupport implements ModelDriven<User> {
     public String login() {
         User existUser = userService.login(user);
         if (existUser == null) {
-            this.addActionError("登入失败: 用户名密码错误或者用户未激活");
+            this.addActionError("登录失败:用户未注册或密码错误");
             return LOGIN;
         } else {
             // 登录成功

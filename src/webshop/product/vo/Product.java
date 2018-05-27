@@ -89,6 +89,4 @@ public class Product {
         this.pdate = pdate;
     }
 
-    // 二级分类的外键:使用二级分类的对象.
-
 }

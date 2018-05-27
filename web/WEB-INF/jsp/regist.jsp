@@ -5,7 +5,7 @@
   Time: 下午4:51
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="UTF-8"%>
 <%@ taglib uri="/struts-tags" prefix="s" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -17,26 +17,24 @@
 
     <script>
         function checkForm() {
-            // 检验用户名
-            // 获得用户名文本框的值
+            // 校验用户名:
+            // 获得用户名文本框的值:
             var username = document.getElementById("username").value;
-            if (username == null || username == '') {
-                alert("用户名不能为空");
+            if(username == null || username == ''){
+                alert("用户名不能为空!");
                 return false;
             }
-
-            // 检验密码
-            // 获得密码文本框的值
+            // 校验密码:
+            // 获得密码框的值:
             var password = document.getElementById("password").value;
-            if (password == null || password == '') {
-                alert("密码不能为空");
+            if(password == null || password == ''){
+                alert("密码不能为空!");
                 return false;
             }
-
-            // 校验确认密码
+            // 校验确认密码:
             var repassword = document.getElementById("repassword").value;
-            if (repassword != password) {
-                alert("两次密码输入不一致");
+            if(repassword != password){
+                alert("两次密码输入不一致!");
                 return false;
             }
         }
@@ -343,7 +341,7 @@
         </ul>
     </div>
     <div class="span24">
-        <div class="copyright">Copyright © 2005-2015 网上商城 版权所有</div>
+        <div class="copyright">Copyright © 2018-2020 网上商城 版权所有</div>
     </div>
 </div>
 <div id="_my97DP" style="position: absolute; top: -1970px; left: -1970px;">

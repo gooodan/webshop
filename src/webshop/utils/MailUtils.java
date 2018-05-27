@@ -5,11 +5,9 @@ import java.util.Properties;
 import javax.mail.Authenticator;
 import javax.mail.Message;
 import javax.mail.Message.RecipientType;
-import javax.mail.MessagingException;
 import javax.mail.PasswordAuthentication;
 import javax.mail.Session;
 import javax.mail.Transport;
-import javax.mail.internet.AddressException;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 import javax.mail.internet.MimeUtility;
@@ -48,7 +46,8 @@ public class MailUtils {
             // 设置标题 主题如果乱码的话 qq邮箱接收不到
             message.setSubject(MimeUtility.encodeText("感谢您的注册,本邮件为激活邮件,您不需要回复", MimeUtility.mimeCharset("gb2312"), null));
             // 设置邮件正文
-            message.setContent("<h1>北大软微商城官方激活邮件!点击下面的连接完成激活操作</h1><h3><a href='http://tkx33w.natappfree.cc/webshop/user_active.action?code="+code+"'>http://192.168.0.104:8080/webshop/user_active.action?code="+code+"</a></h3>", "text/html;charset=UTF-8");
+//            message.setContent("<h1>北大软微商城官方激活邮件!点击下面的连接完成激活操作</h1><h3><a href='http://192.168.0.105:8080/webshop/user_active.action?code="+code+"'>http://192.168.0.105:8080/webshop/user_active.action?code="+code+"</a></h3>", "text/html;charset=UTF-8");
+            message.setContent("<h1>北大软微商城官方激活邮件!点击下面的连接完成激活操作</h1><h3><a href='http://192.168.102.31:8080/webshop/user_active.action?code="+code+"'>http://192.168.102.31:8080/webshop/user_active.action?code="+code+"</a></h3>", "text/html;charset=UTF-8");
             // 3.发送邮件:
             Transport.send(message);
 //            Transport transport = session.getTransport();

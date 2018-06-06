@@ -47,7 +47,7 @@ public class MailUtils {
             message.setSubject(MimeUtility.encodeText("感谢您的注册,本邮件为激活邮件,您不需要回复", MimeUtility.mimeCharset("gb2312"), null));
             // 设置邮件正文
 //            message.setContent("<h1>北大软微商城官方激活邮件!点击下面的连接完成激活操作</h1><h3><a href='http://192.168.0.105:8080/webshop/user_active.action?code="+code+"'>http://192.168.0.105:8080/webshop/user_active.action?code="+code+"</a></h3>", "text/html;charset=UTF-8");
-            message.setContent("<h1>北大软微商城官方激活邮件!点击下面的连接完成激活操作</h1><h3><a href='http://192.168.102.31:8080/webshop/user_active.action?code="+code+"'>http://192.168.102.31:8080/webshop/user_active.action?code="+code+"</a></h3>", "text/html;charset=UTF-8");
+            message.setContent("<h1>北大软微商城官方激活邮件!点击下面的连接完成激活操作</h1><h3><a href='http://114.115.218.37:8080/webshop/user_active.action?code="+code+"'>http://114.115.218.37:8080/webshop/user_active.action?code="+code+"</a></h3>", "text/html;charset=UTF-8");
             // 3.发送邮件:
             Transport.send(message);
 //            Transport transport = session.getTransport();

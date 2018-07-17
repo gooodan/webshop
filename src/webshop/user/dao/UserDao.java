@@ -31,17 +31,17 @@ public class UserDao extends HibernateDaoSupport {
         return null;
     }
 
-    // 注册用户存入数据库代码实现
-    public void save(User user) {
-        this.getHibernateTemplate().save(user);
-    }
-
     // 修改用户状态的方法
     public void update(User existUser) {
         this.getHibernateTemplate().update(existUser);
     }
 
-    // 用户登入的方法
+    // 注册用户存入数据库代码实现
+    public void save(User user) {
+        this.getHibernateTemplate().save(user);
+    }
+
+    // DAO层用户登入的方法
     public User login(User user) {
         String hql = "from User where username = ? and password = ? and state = ?";
         List<User> list = this.getHibernateTemplate().find(hql, user.getUsername(), user.getPassword(), 1);

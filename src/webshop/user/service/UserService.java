@@ -29,6 +29,10 @@ public class UserService {
         return userDao.findByCode(code);
     }
 
+    // 修改用户的状态的方法
+    public void update(User existUser) {
+        userDao.update(existUser);
+    }
 
     // 业务层完成用户注册的代码
     public void save(User user) {
@@ -41,12 +45,9 @@ public class UserService {
         userDao.save(user);
     }
 
-    // 修改用户的状态的方法
-    public void update(User existUser) {
-        userDao.update(existUser);
-    }
 
-    // 用户登入的方法
+
+    // Service层用户登入的方法
     public User login(User user) {
         return userDao.login(user);
     }

@@ -59,7 +59,8 @@ public class MailUtils {
         }
     }
 
+    // 测试邮件发送
 //    public static void main(String[] args) {
-//        sendMail("304028999@qq.com","asdadsf");
+//        sendMail("304028999@qq.com","abcdefghijklmnopqrstuvwxyz");
 //    }
 }
